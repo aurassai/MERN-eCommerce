@@ -47,7 +47,7 @@ const ProductEditScreen = ({ match, history }) => {
                 setDescription(product.description);
             }
         }
-    }, [product, dispatch, productId, successUpdate]);
+    }, [product, history, dispatch, productId, successUpdate]);
 
     const uploadFileHandler = async (e) => {
         const file = e.target.files[0];
